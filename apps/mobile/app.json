@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "食堂推荐系统",
+    "slug": "location-eater",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#4CAF50"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.location.eater",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "我们需要您的位置权限来定位您所在大学，推荐附近的食堂美食。"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#4CAF50"
+      },
+      "package": "com.location.eater",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "我们需要您的位置权限来定位您所在大学，推荐附近的食堂美食。",
+          "locationWhenInUsePermission": "我们需要您的位置权限来定位您所在大学，推荐附近的食堂美食。"
+        }
+      ]
+    ]
+  }
+}

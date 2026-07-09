@@ -1,0 +1,6 @@
+# 终端1 - 启动后端
+cd "e:\JTH\small project\location"
+pnpm dev:server
+
+# 终端2 - 启动移动端
+pnpm dev:mobile

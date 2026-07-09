@@ -1,0 +1,16 @@
+{
+  "name": "location-eater",
+  "version": "1.0.0",
+  "private": true,
+  "description": "地理位置食堂推荐系统 - React Native + Express + Supabase",
+  "scripts": {
+    "mobile": "pnpm --filter mobile",
+    "server": "pnpm --filter server",
+    "dev:mobile": "pnpm --filter mobile start",
+    "dev:server": "pnpm --filter server dev",
+    "setup": "pnpm install"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
